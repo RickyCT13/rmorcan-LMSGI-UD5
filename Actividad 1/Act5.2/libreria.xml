@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="libreria.xsl"?>
+<libreria>
+    <libro>
+        <titulo>Physics-based animation</titulo>
+        <autor>Kenny Erleben</autor>
+        <editor>Charles River Media</editor>
+        <numPaginas>150</numPaginas>
+        <isbn>978-1584503804</isbn>
+        <precio>50.06</precio>
+    </libro>
+
+    <libro>
+        <titulo>Principios de seguridad informática para usuarios</titulo>
+        <autor>Carlos Garre</autor>
+        <editor>Dykinson</editor>
+        <numPaginas>200</numPaginas>
+        <isbn>978-84-9849-998-8</isbn>
+        <precio>13.00</precio>
+    </libro>
+
+    <libro>
+        <titulo>Ejercicios complementarios de lógica digital</titulo>
+        <autor>Alberto Sánchez</autor>
+        <editor>Dykinson</editor>
+        <numPaginas>175</numPaginas>
+        <isbn>978-84-9849-703-8</isbn>
+        <precio>12.00</precio>
+    </libro>
+
+    <libro>
+        <titulo>Conceptos Básicos de computación y programación</titulo>
+        <autor>Fulanito Gómez</autor>
+        <editor>Brick by Brick</editor>
+        <numPaginas>183</numPaginas>
+        <isbn>125-78-9876-258-0</isbn>
+        <precio>9.50</precio>
+    </libro>
+
+    <libro>
+        <titulo>Las buenas prácticas en el desarrollo de aplicaciones informáticas.</titulo>
+        <autor>Fulanito Gómez</autor>
+        <editor>Brick by Brick</editor>
+        <numPaginas></numPaginas>
+        <isbn>984-14-9658-154-9</isbn>
+        <precio>12.50</precio>
+    </libro>
+
+    <libro>
+        <titulo>MySQL 8 para 'Dummies'</titulo>
+        <autor>Jose Juan Jiménez</autor>
+        <editor>Editorial Monolitica</editor>
+        <numPaginas>145</numPaginas>
+        <isbn>321-49-3214-747-7</isbn>
+        <precio>9.75</precio>
+    </libro>
+
+    <libro>
+        <titulo>Matemáticas II</titulo>
+        <autor>Mario Verdes</autor>
+        <editor>Editorial Monolitica</editor>
+        <numPaginas>300</numPaginas>
+        <isbn>321-58-9514-321-9</isbn>
+        <precio>10.00</precio>
+    </libro>
+</libreria>

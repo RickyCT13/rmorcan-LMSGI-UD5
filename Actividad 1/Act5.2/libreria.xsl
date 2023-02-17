@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="libreria.css" type="text/css"?>
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
@@ -13,7 +12,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <th>Autor</th>
                         <th>Precio</th>
                     </tr>
-                    <xsl:for-each select="libreria/libro">
+                    <xsl:for-each select="libreria/libro[autor!='Fulanito Gómez']">
+                        <xsl:sort select="precio" order="ascending"/>
                         <tr bgcolor="#454545" style="color:Lavender;">
                             <td>
                                 <xsl:value-of select="isbn" />
@@ -29,6 +29,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </td>
                         </tr>
                     </xsl:for-each>
+                    
                 </table>
             </body>
         </html>

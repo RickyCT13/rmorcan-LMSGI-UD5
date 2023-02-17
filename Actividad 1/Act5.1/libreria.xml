@@ -48,7 +48,8 @@
 
     <libro>
         <titulo>Matemáticas II</titulo>
-        <autor>Editorial Monolitica</autor>
+        <autor>Mario Verdes</autor>
+        <editor>Editorial Monolitica</editor>
         <numPaginas>300</numPaginas>
         <isbn>321-58-9514-321-9</isbn>
         <precio>10.00</precio>
