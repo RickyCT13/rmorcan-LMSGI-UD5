@@ -11,13 +11,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </xsl:template>
 
     <xsl:template match="libreria">
-        <table>
+        <table border="1">
             <tr style="background-color:MediumPurple;">
                 <th>isbn</th>
                 <th>Título</th>
                 <th>Autor</th>
                 <th>Editor</th>
-                <th>Núm. Páginas</th>
+                <th>Num. Páginas</th>
                 <th>Precio</th>
             </tr>
             <xsl:apply-templates select="libro"/>
@@ -26,12 +26,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
     <xsl:template match="libro">
         <tr>
-            <td><xsl:apply-templates select="isbn"/></td>
-            <td><xsl:apply-templates select="titulo"/></td>
-            <td><xsl:apply-templates select="autor"/></td>
-            <td><xsl:apply-templates select="editor"/></td>
-            <td><xsl:apply-templates select="numPaginas"/></td>
-            <td><xsl:apply-templates select="precio"/></td>
+            <xsl:apply-templates select="isbn"/>
+            <xsl:apply-templates select="titulo"/>
+            <xsl:apply-templates select="autor"/>
+            <xsl:apply-templates select="editor"/>
+            <xsl:apply-templates select="numPaginas"/>
+            <xsl:apply-templates select="precio"/>
         </tr>
     </xsl:template>
 
@@ -48,7 +48,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <td><xsl:value-of select="."/></td>
     </xsl:template>
     <xsl:template match="numPaginas">
-        
+        <td><xsl:value-of select="."/></td>
     </xsl:template>
     <xsl:template match="precio">
         <td><xsl:value-of select="."/></td>
