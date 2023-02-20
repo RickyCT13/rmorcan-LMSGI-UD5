@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cd_p1.xsl" type="text/xsl"?>
+<cds>
+    <cd>
+        <titulo_album>a</titulo_album>
+        <artista>a</artista>
+        <cancion>
+            <titulo_cancion>a</titulo_cancion>
+            <duracion>a</duracion>
+        </cancion>
+        <sello>a</sello>
+        <año>a</año>
+    </cd>
+</cds>
