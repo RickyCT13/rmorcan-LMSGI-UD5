@@ -2,8 +2,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
     <html>
-        <body style="background-color: darkslategray;">
+        <body style="background-color: darkslategray; font-family: Segoe UI;">
             <h1 style="color: dodgerblue;">Catálogo de CDs</h1>
+            
             <table border="1">
                 <thead style="background-color:dodgerblue;">
                   <tr>
@@ -18,23 +19,27 @@
                     <th>Duracion</th>
                   </tr>
                 </thead>
-                <tbody>
-                    <xsl:for-each select="cds/cd">
-                        <tr>
-                            <td><xsl:value-of select="titulo_album"/></td>
-                            <td><xsl:value-of select="artista"/></td>
-                            <td><xsl:value-of select="cancion"/></td>
-                            <td><xsl:value-of select="sello"/></td>
-                            <td><xsl:value-of select="año"/></td>
-                        </tr>
-                        <tr>
-                            <td><xsl:value-of select="cancion/titulo_cancion"/></td>
-                            <td><xsl:value-of select="cancion/duracion"/></td>
-                        </tr>
-                    </xsl:for-each>
-                </tbody>
+                <xsl:apply-templates/>
             </table>
         </body>
     </html>
     </xsl:template>
+    
+    <xsl:template match="catalogo">
+        <!--<table border="1">-->
+            <tbody style="background-color:cornflowerblue;">
+                <xsl:for-each select="cd">
+                    <tr>
+                        <td><xsl:value-of select="album"/></td>
+                        <td><xsl:value-of select="artista"/></td>
+                        <td><xsl:value-of select="cancion/titulo"/></td>
+                        <td><xsl:value-of select="cancion/duracion"/></td>
+                        <td><xsl:value-of select="sello"/></td>
+                        <td><xsl:value-of select="año"/></td>
+                    </tr>
+                </xsl:for-each>
+            </tbody>
+        <!--</table>-->
+    </xsl:template>
+    
 </xsl:stylesheet>
