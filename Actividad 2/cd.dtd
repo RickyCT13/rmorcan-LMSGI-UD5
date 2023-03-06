@@ -1,2 +1,0 @@
-<!ELEMENT catalogo (cd*)>
-<!ELEMENT cd (album, artista, cancion+, sello, año)>

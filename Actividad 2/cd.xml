@@ -1,14 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="cd_p1.xsl" type="text/xsl"?>
+<?xml-stylesheet href="cd_p4.xsl" type="text/xsl"?>
 <catalogo>
     <cd>
-        <album></album>
-        <artista></artista>
-        <cancion duracion_segundos="">
-            <titulo></titulo>
-            <duracion></duracion>
+        <album>Álbum de rock 1</album>
+        <artista>Grupo 1</artista>
+        <cancion duracion_segundos="208">
+            <titulo>Canción 1</titulo>
+            <duracion>3:28</duracion>
         </cancion>
-        <sello></sello>
-        <año></año>
+        <sello>Discos Inc.</sello>
+        <año>2015</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de rock 1</album>
+        <artista>Grupo 1</artista>
+        <cancion duracion_segundos="185">
+            <titulo>Canción 2</titulo>
+            <duracion>3:05</duracion>
+        </cancion>
+        <sello>Discos Inc.</sello>
+        <año>2015</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de rock 2</album>
+        <artista>Grupo 1</artista>
+        <cancion duracion_segundos="175">
+            <titulo>Canción 3</titulo>
+            <duracion>2:55</duracion>
+        </cancion>
+        <sello>We Rock Records</sello>
+        <año>2019</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de blues 1</album>
+        <artista>Grupo 2</artista>
+        <cancion duracion_segundos="200">
+            <titulo>Canción 4</titulo>
+            <duracion>3:20</duracion>
+        </cancion>
+        <sello>Blue Day Records</sello>
+        <año>1988</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de música alternativa 1</album>
+        <artista>Grupo 3</artista>
+        <cancion duracion_segundos="243">
+            <titulo>Canción 5</titulo>
+            <duracion>4:03</duracion>
+        </cancion>
+        <sello>Discográfica Nuevos Horizontes</sello>
+        <año>2020</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de rock 3</album>
+        <artista>Grupo 1</artista>
+        <cancion duracion_segundos="224">
+            <titulo>Canción 6</titulo>
+            <duracion>3:44</duracion>
+        </cancion>
+        <sello>Discos Inc.</sello>
+        <año>2014</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum techno 1</album>
+        <artista>Grupo 4</artista>
+        <cancion duracion_segundos="152">
+            <titulo>Canción 7</titulo>
+            <duracion>2:32</duracion>
+        </cancion>
+        <sello>Discográfica Nuevos Horizontes</sello>
+        <año>2021</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de Jazz-Fusión 1</album>
+        <artista>Grupo 3</artista>
+        <cancion duracion_segundos="300">
+            <titulo>Canción 8</titulo>
+            <duracion>5:00</duracion>
+        </cancion>
+        <sello>Discos Inc.</sello>
+        <año>2002</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de Rock 2</album>
+        <artista>Grupo 1</artista>
+        <cancion duracion_segundos="205">
+            <titulo>Canción 9</titulo>
+            <duracion>3:25</duracion>
+        </cancion>
+        <sello>We Rock Records</sello>
+        <año>2019</año>
+    </cd>
+    
+    <cd>
+        <album>Álbum de música alternativa 2</album>
+        <artista>Grupo 3</artista>
+        <cancion duracion_segundos="483">
+            <titulo>Canción 10</titulo>
+            <duracion>8:03</duracion>
+        </cancion>
+        <sello>Discográfica Nuevos Horizontes</sello>
+        <año>2022</año>
     </cd>
 </catalogo>
