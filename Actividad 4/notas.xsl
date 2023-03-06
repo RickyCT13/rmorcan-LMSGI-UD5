@@ -27,6 +27,11 @@
                     <th>Final</th>
                 </tr>
             </thead>
+            <xsl:apply-templates select="alumno"/>
         </table>
+    </xsl:template>
+
+    <xsl:template match="alumno">
+
     </xsl:template>
 </xsl:stylesheet>
