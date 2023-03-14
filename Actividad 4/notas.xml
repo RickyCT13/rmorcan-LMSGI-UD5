@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <!DOCTYPE notas>
-<?xml-stylesheet type="text/xsl" href="notas2.xsl"?>
+<?xml-stylesheet type="text/xsl" href="notas.xsl"?>
 <notas>
     <alumno convocatoria="Septiembre">
         <nombre>Carlos</nombre>

@@ -6,32 +6,39 @@
     <html>
         <body style="background-color:DimGrey;">
             <h1 style="color:Lavender;">Notas</h1>
-            <xsl:apply-templates/>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Datos</th>
+                        <th colspan="4">Notas</th>
+                    </tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Cuestionarios</th>
+                        <th>Tareas</th>
+                        <th>Examen</th>
+                        <th>Final</th>
+                    </tr>
+                </thead>
+                <xsl:apply-templates/>
+            </table>
         </body>
     </html>
     </xsl:template>
 
     <xsl:template match="notas">
-        <table border="1">
-            <thead>
+        <tbody>
+            <xsl:for-each select="//alumno[@convocatoria='Junio']">
                 <tr>
-                    <th colspan="3">Datos</th>
-                    <th colspan="3">Notas</th>
+                    <td><xsl:value-of select="nombre"/></td>
+                    <td><xsl:value-of select="apellidos"/></td>
+                    <td><xsl:value-of select="cuestionarios"/></td>
+                    <td><xsl:value-of select="tareas"/></td>
+                    <td><xsl:value-of select="examen"/></td>
+                    <td><xsl:value-of select="final"/></td>
                 </tr>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Cuestionarios</th>
-                    <th>Tareas</th>
-                    <th>Examen</th>
-                    <th>Final</th>
-                </tr>
-            </thead>
-            <xsl:apply-templates select="alumno"/>
-        </table>
-    </xsl:template>
-
-    <xsl:template match="alumno">
-
+            </xsl:for-each>
+        </tbody>
     </xsl:template>
 </xsl:stylesheet>
