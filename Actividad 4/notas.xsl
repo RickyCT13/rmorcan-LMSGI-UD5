@@ -8,6 +8,11 @@
             <h1 style="color:Lavender;">Notas</h1>
             <table border="1">
                 <thead>
+                    <!-- Si queremos que se muestren las notas en su celda
+                        correspondiente y que no se muestre la matrícula,
+                        tenemos que hacer que 'Notas' ocupe 4 columnas
+                        en vez de tres.
+                    -->
                     <tr>
                         <th colspan="2">Datos</th>
                         <th colspan="4">Notas</th>
@@ -36,7 +41,23 @@
                     <td><xsl:value-of select="cuestionarios"/></td>
                     <td><xsl:value-of select="tareas"/></td>
                     <td><xsl:value-of select="examen"/></td>
-                    <td><xsl:value-of select="final"/></td>
+                    <xsl:choose>
+                      <xsl:when test="final>=9">
+                        <td style="color:blue;">Sobresaliente</td>
+                      </xsl:when>
+                      <xsl:when test="final>=7">
+                        <td style="color:dodgerblue;">Notable</td>
+                      </xsl:when>
+                      <xsl:when test="final>=6">
+                        <td>Bien</td>
+                      </xsl:when>
+                      <xsl:when test="final>=5">
+                        <td style="color:orange;">Suficiente</td>
+                      </xsl:when>
+                      <xsl:otherwise>
+                        <td style="color:red;">Suspenso</td>
+                      </xsl:otherwise>
+                    </xsl:choose>
                 </tr>
             </xsl:for-each>
         </tbody>
